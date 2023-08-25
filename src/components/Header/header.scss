@@ -1,0 +1,42 @@
+.header {
+  background-color: #191919;
+}
+.header__row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
+}
+
+.header__items {
+  display: flex;
+  gap: 25px;
+}
+
+.header__item-link {
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  &:hover {
+    color: #dd6b20;
+    opacity: 0.8;
+  }
+}
+.header__img {
+  cursor: pointer;
+}
+.header__img-cart {
+  cursor: pointer;
+}
+
+.active {
+  color: #dd6b20;
+}
