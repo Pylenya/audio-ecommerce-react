@@ -7,17 +7,26 @@
   padding: 10px 25px;
   font-size: 0.8125rem;
   transition: all 0.2s linear;
-  &:hover {
-    opacity: 0.7;
-  }
 }
 .btn-orange {
   color: white;
   background-color: #d87d4a;
   border: none;
+  &:hover {
+    background-color: #f8a97c;
+  }
 }
 .btn-black {
   color: white;
   background-color: black;
   border: none;
+  &:hover {
+    background-color: #4c4c4c;
+  }
+}
+.btn-transparent {
+  &:hover {
+    background-color: black;
+    color: white;
+  }
 }

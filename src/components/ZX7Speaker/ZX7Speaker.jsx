@@ -20,7 +20,7 @@ function ZX7Speaker() {
           </picture>
           <div className="zx7speaker__text">
             <h2 className="zx7speaker__title">ZX7 SPEAKER</h2>
-            <Button>See product</Button>
+            <Button color={"transparent"}>See product</Button>
           </div>
         </div>
       </div>
