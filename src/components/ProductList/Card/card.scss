@@ -24,20 +24,22 @@
   letter-spacing: 3px;
 }
 .card__subtitle {
-  position: relative;
   text-align: center;
   font-size: 13px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.5);
   padding-top: 15px;
-  &::after {
-    position: absolute;
-    content: "";
-    background: url("../../images/shared/desktop/icon-arrow-right.svg")
-      no-repeat;
-    width: 15px;
-    height: 15px;
-    bottom: 0;
-    right: 136px;
+  span {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("../../../images/shared/desktop/icon-arrow-right.svg")
+        no-repeat;
+      width: 15px;
+      height: 15px;
+      bottom: 0;
+      right: -25px;
+    }
   }
 }

@@ -1,0 +1,37 @@
+.zx9speaker {
+  margin-bottom: 150px;
+}
+.zx9speaker__box {
+  padding-top: 96px;
+  border-radius: 15px;
+  background: url(../../images/home/desktop/pattern-circles.svg) no-repeat;
+  background-position: -145% 35%;
+  background-color: #d87d4a;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  overflow: hidden;
+}
+.zx9speaker__text {
+  padding-top: 50px;
+  max-width: 300px;
+}
+.zx9speaker__title {
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+.zx9speaker__desc {
+  font-weight: 200;
+  line-height: 1.56;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 20px;
+}
+.zx9speaker__img {
+  position: relative;
+  top: 10px;
+  width: 410px;
+}

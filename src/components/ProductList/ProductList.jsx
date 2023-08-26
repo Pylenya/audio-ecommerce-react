@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Card/Card";
+import Card from "./Card/Card.jsx";
 import "./productlist.scss";
 import headphonesImg from "../../images/shared/desktop/image-headphones.png";
 import speakersImg from "../../images/shared/desktop/image-speakers.png";
