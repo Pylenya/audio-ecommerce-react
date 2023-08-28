@@ -10,8 +10,8 @@ function YX1Earphones() {
       <div className="container">
         <div className="yx1earphones__box">
           <picture>
-            <source media="(max-width:480px)" srcset={mobileIMG} />
-            <source media="(max-width:999px)" srcset={tabletIMG} />
+            <source media="(max-width:480px)" srcSet={mobileIMG} />
+            <source media="(max-width:999px)" srcSet={tabletIMG} />
             <img
               className="yx1earphones__img"
               src={desctopIMG}
