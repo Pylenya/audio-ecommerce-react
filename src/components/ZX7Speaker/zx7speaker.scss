@@ -1,12 +1,14 @@
+.zx7speaker {
+  margin-bottom: 50px;
+}
+
 .zx7speaker__box {
   position: relative;
-  margin-bottom: 50px;
   img {
     border-radius: 15px;
     width: 100%;
   }
 }
-
 .zx7speaker__text {
   position: absolute;
   top: 50%;
@@ -17,4 +19,13 @@
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 25px;
+}
+@media (max-width: 991px) {
+  .zx7speaker__text {
+    transform: translate(0, -50%);
+    left: 50px;
+  }
+  .zx7speaker {
+    margin-bottom: 25px;
+  }
 }

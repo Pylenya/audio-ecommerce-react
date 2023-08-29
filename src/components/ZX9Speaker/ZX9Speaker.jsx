@@ -10,8 +10,8 @@ function ZX9Speaker() {
       <div className="container">
         <div className="zx9speaker__box">
           <picture>
-            <source media="(max-width:480px)" srcSet={mobileIMG} />
-            <source media="(max-width:999px)" srcSet={tabletIMG} />
+            <source media="(max-width:479px)" srcSet={mobileIMG} />
+            <source media="(max-width:991px)" srcSet={tabletIMG} />
             <img
               className="zx9speaker__img"
               src={desctopIMG}

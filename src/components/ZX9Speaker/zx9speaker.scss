@@ -35,3 +35,31 @@
   top: 10px;
   width: 410px;
 }
+@media (max-width: 991px) {
+  .zx9speaker__box {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-position: 100% 100%;
+  }
+  .zx9speaker__img {
+    position: relative;
+    width: 200px;
+  }
+  .zx9speaker__text {
+    padding-top: 0px;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 479px) {
+  .zx9speaker__title {
+    font-size: 36px;
+  }
+  .zx9speaker {
+    margin-bottom: 25px;
+  }
+}

@@ -28,3 +28,28 @@
 .bestgear__img {
   border-radius: 15px;
 }
+@media (max-width: 991px) {
+  .bestgear {
+    margin-bottom: 100px;
+  }
+  .bestgear__box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 25px;
+    text-align: center;
+  }
+  .bestgear__img {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .bestgear__text {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+@media (max-width: 479px) {
+  .bestgear__title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+}
