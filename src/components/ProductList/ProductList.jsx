@@ -10,9 +10,13 @@ export const ProductList = () => {
     <section className="product-list">
       <div className="container">
         <div className="product-list__box">
-          <Card image={headphonesImg} title={"HEADPHONES"} />
-          <Card image={speakersImg} title={"SPEAKERS"} />
-          <Card image={earphonesImg} title={"EARPHONES"} />
+          <Card
+            link={"/headphones"}
+            image={headphonesImg}
+            title={"HEADPHONES"}
+          />
+          <Card link={"/speakers"} image={speakersImg} title={"SPEAKERS"} />
+          <Card link={"/earphones"} image={earphonesImg} title={"EARPHONES"} />
         </div>
       </div>
     </section>
