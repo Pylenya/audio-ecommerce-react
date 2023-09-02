@@ -14,22 +14,50 @@ export const Footer = () => {
           <nav className="footer__nav">
             <ul className="footer__items">
               <li className="footer__item">
-                <Link to="/home" className="footer__item-link" href="!#">
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  to="/home"
+                  className="footer__item-link"
+                  href="!#"
+                >
                   Home
                 </Link>
               </li>
               <li className="footer__item">
-                <Link to="/headphones" className="footer__item-link" href="!#">
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  to="/headphones"
+                  className="footer__item-link"
+                  href="!#"
+                >
                   Headphones
                 </Link>
               </li>
               <li className="footer__item">
-                <Link to="/speakers" className="footer__item-link" href="!#">
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  to="/speakers"
+                  className="footer__item-link"
+                  href="!#"
+                >
                   Speakers
                 </Link>
               </li>
               <li className="footer__item">
-                <Link to="/earphones" className="footer__item-link" href="!#">
+                <Link
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  to="/earphones"
+                  className="footer__item-link"
+                  href="!#"
+                >
                   Earphones
                 </Link>
               </li>

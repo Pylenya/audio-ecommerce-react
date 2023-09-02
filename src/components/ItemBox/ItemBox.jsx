@@ -1,6 +1,7 @@
 import React from "react";
 import "./itembox.scss";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 export const ItemBox = ({
   requireDesktopIMG,
   requireTabletIMG,
@@ -8,9 +9,14 @@ export const ItemBox = ({
   title,
   desc,
   odd,
+  price,
+  details,
+  slug,
+  type,
+  id,
 }) => {
   return (
-    <div className={`item ${odd}`}>
+    <div className={odd ? "item odd" : "item"}>
       <picture>
         <source
           media="(max-width:479px)"
@@ -36,7 +42,18 @@ export const ItemBox = ({
         <div className="item__desc">
           <p>{desc}</p>
         </div>
-        <Button color={"orange"}>see product</Button>
+        {details ? <div className="item__price">$ {price}</div> : null}
+        <Link
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          state={{ type: type, slug: slug }}
+          to={`/${type}/${slug}`}
+        >
+          <Button color={"orange"}>
+            {details ? "add to cart" : "see product"}
+          </Button>
+        </Link>
       </div>
     </div>
   );

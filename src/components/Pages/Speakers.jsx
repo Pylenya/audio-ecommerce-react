@@ -11,7 +11,7 @@ export const Speakers = () => {
     <>
       <Header />
       <PageTitle title={"speakers"} />
-      <ItemList data={data} />
+      <ItemList data={data} type={"speakers"} />
       <ProductList />
       <BestGear />
       <Footer />

@@ -11,7 +11,7 @@ export const Earphones = () => {
     <>
       <Header />
       <PageTitle title={"earphones"} />
-      <ItemList data={data} />
+      <ItemList data={data} type={"earphones"} />
       <ProductList />
       <BestGear />
       <Footer />

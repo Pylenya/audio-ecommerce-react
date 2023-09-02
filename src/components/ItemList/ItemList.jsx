@@ -1,7 +1,7 @@
 import React from "react";
 import "./itemlist.scss";
 import ItemBox from "../ItemBox/ItemBox";
-export const ItemList = ({ data }) => {
+export const ItemList = ({ data, type }) => {
   return (
     <section className="items">
       <div className="container">
@@ -15,6 +15,10 @@ export const ItemList = ({ data }) => {
               requireMobileIMG={item.image.mobile}
               title={item.name}
               desc={item.description}
+              price={item.price}
+              slug={item.slug}
+              type={type}
+              id={item.id}
             />
           );
         })}
