@@ -2,6 +2,7 @@ import React from "react";
 import desctopIMG from "../../images/home/desktop/image-speaker-zx9.png";
 import tabletIMG from "../../images/home/tablet/image-speaker-zx9.png";
 import mobileIMG from "../../images/home/mobile/image-speaker-zx9.png";
+import { Link } from "react-router-dom";
 import "./zx9speaker.scss";
 import Button from "../Button/Button";
 function ZX9Speaker() {
@@ -24,7 +25,12 @@ function ZX9Speaker() {
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound.
             </p>
-            <Button color={"black"}>See product</Button>
+            <Link
+              state={{ type: "speakers", slug: "zx9-speaker" }}
+              to={"/speakers/zx9-speaker"}
+            >
+              <Button color="black">SEE PRODUCT</Button>
+            </Link>
           </div>
         </div>
       </div>
