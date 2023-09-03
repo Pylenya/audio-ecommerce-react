@@ -73,10 +73,13 @@
     backdrop-filter: blur(40.7742271423px);
     z-index: 2;
     transition: right 0.5s;
+    overflow-y: hidden;
   }
+
   .active {
     right: 0;
   }
+
   .header__list-burger {
     max-width: 65%;
     padding-left: 30px;

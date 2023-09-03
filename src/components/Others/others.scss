@@ -10,3 +10,10 @@
   display: flex;
   gap: 20px;
 }
+
+@media (max-width: 770px) {
+  .others__items {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+}

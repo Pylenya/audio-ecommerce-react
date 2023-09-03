@@ -28,7 +28,6 @@ export const ItemDetails = () => {
     let temp = filterBySlug(state.slug, allData);
     setItemData(temp);
   }, [state, allData]);
-  console.log(itemData);
   return (
     <>
       {itemData && (

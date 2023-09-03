@@ -50,3 +50,8 @@
     font-size: 14px;
   }
 }
+@media (max-width: 479px) {
+  .card {
+    max-width: none;
+  }
+}

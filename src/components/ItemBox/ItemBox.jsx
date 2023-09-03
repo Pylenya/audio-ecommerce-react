@@ -13,11 +13,12 @@ export const ItemBox = ({
   details,
   slug,
   type,
-  id,
 }) => {
   return (
-    <div className={odd ? "item odd" : "item"}>
-      <picture>
+    <div
+      className={odd ? "item odd" : "item" && details ? "item details" : "item"}
+    >
+      <picture className="item__pic">
         <source
           media="(max-width:479px)"
           srcSet={require(`../../images/${requireMobileIMG}`)}

@@ -7,11 +7,11 @@ export const ItemAlsoLike = ({ img, title, slug, type }) => {
     <div className="item-also-like">
       <picture>
         <source
-          media="(max-width:479px)"
+          media="(max-width:770px)"
           srcSet={require(`../../../images/${img.mobile}`)}
         />
         <source
-          media="(max-width:991px)"
+          media="(max-width:1000px)"
           srcSet={require(`../../../images/${img.tablet}`)}
         />
         <img

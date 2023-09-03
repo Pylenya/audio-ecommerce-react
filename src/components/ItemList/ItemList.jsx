@@ -10,9 +10,9 @@ export const ItemList = ({ data, type }) => {
             <ItemBox
               key={item.id}
               odd={(index + 1) % 2 === 0 ? "odd" : ""}
-              requireDesktopIMG={item.image.desktop}
-              requireTabletIMG={item.image.tablet}
-              requireMobileIMG={item.image.mobile}
+              requireDesktopIMG={item.categoryImage.desktop}
+              requireTabletIMG={item.categoryImage.tablet}
+              requireMobileIMG={item.categoryImage.mobile}
               title={item.name}
               desc={item.description}
               price={item.price}

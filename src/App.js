@@ -17,11 +17,10 @@ function App() {
         <Route path="/speakers/:slug" element={<ItemDetails />} />
         <Route path="/earphones" element={<Earphones />} />
         <Route path="/earphones/:slug" element={<ItemDetails />} />
-        {/* <Route path="*" element={<Navigate to="/home" />} /> */}
+        <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </>
   );
 }
 
 export default App;
-// rooter сделать и адаптив

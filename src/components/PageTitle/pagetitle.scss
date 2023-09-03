@@ -11,3 +11,13 @@
   color: white;
   text-align: center;
 }
+
+@media (max-width: 991px) {
+  .page-name__title {
+    padding-top: 2.5625rem;
+    padding-bottom: 2.0625rem;
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+}

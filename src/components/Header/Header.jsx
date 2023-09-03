@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.scss";
 import Logo from "../Logo/Logo";
 import cartLogo from "../../images/shared/desktop/icon-cart.svg";
@@ -7,6 +7,15 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export const Header = () => {
   const [nav, setNav] = useState(false);
+  useEffect(() => {
+    let root = document.getElementById("body");
+    const inlineStyles = root.style;
+    if (nav) {
+      inlineStyles.overflowY = "hidden";
+    } else {
+      inlineStyles.overflowY = "visible";
+    }
+  }, [nav]);
   return (
     <header className="header">
       <div className="container">
@@ -38,12 +47,12 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li className="header__item">
-                <NavLink className="header__item-link" to="/crew">
+                <NavLink className="header__item-link" to="/speakers">
                   Speakers
                 </NavLink>
               </li>
               <li className="header__item">
-                <NavLink className="header__item-link" to="/technology">
+                <NavLink className="header__item-link" to="/earphones">
                   Earphones
                 </NavLink>
               </li>

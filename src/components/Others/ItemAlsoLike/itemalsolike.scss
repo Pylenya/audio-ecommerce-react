@@ -18,3 +18,8 @@
   margin-bottom: 32px;
   letter-spacing: 0.1069rem;
 }
+@media (max-width: 770px) {
+  .item-also-like {
+    margin-bottom: 10px;
+  }
+}
