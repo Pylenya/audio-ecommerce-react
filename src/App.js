@@ -6,6 +6,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Speakers from "./components/Pages/Speakers";
 import Earphones from "./components/Pages/Earphones";
 import ItemDetails from "./components/ItemDetails/ItemDetails";
+import Cart from "./components/Pages/Cart";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/speakers/:slug" element={<ItemDetails />} />
         <Route path="/earphones" element={<Earphones />} />
         <Route path="/earphones/:slug" element={<ItemDetails />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </>

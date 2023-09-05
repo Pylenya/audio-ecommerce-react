@@ -1,8 +1,10 @@
 import React from "react";
 import "./button.scss";
-export const Button = ({ color, children }) => {
+export const Button = ({ color, children, onClick }) => {
   return (
-    <button className={color ? `btn btn-${color}` : `btn`}>{children}</button>
+    <button onClick={onClick} className={color ? `btn btn-${color}` : `btn`}>
+      {children}
+    </button>
   );
 };
 export default Button;

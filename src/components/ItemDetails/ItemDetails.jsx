@@ -14,7 +14,6 @@ export const ItemDetails = () => {
   const { state } = useLocation();
   const [allData] = useState(require("../../data/alldata.json"));
   const [itemData, setItemData] = useState();
-
   const filterBySlug = (slug, allDataSlug) => {
     let temp;
     for (let i = 0; i < allDataSlug.length; i++) {

@@ -85,9 +85,9 @@ export const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className="header__img-cart">
+          <Link to="/cart" className="header__img-cart">
             <img src={cartLogo} alt="cart" />
-          </div>
+          </Link>
         </div>
       </div>
     </header>

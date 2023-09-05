@@ -44,19 +44,32 @@ export const ItemBox = ({
           <p>{desc}</p>
         </div>
         {details ? <div className="item__price">$ {price}</div> : null}
-        <Link
-          onClick={() => {
-            window.scrollTo(0, 0);
-          }}
-          state={{ type: type, slug: slug }}
-          to={`/${type}/${slug}`}
-        >
-          <Button color={"orange"}>
-            {details ? "add to cart" : "see product"}
+        {details ? (
+          <Button
+            onClick={() =>
+              localStorage.setItem(
+                type.id,
+                JSON.stringify({ ...type, quantity: 1 })
+              )
+            }
+            color={"orange"}
+          >
+            add to cart
           </Button>
-        </Link>
+        ) : (
+          <Link
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            state={{ type: type, slug: slug }}
+            to={`/${type}/${slug}`}
+          >
+            <Button color={"orange"}>see product</Button>
+          </Link>
+        )}
       </div>
     </div>
   );
 };
 export default ItemBox;
+// state={{ itemInfo: type }}

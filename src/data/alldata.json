@@ -9,7 +9,7 @@
       "tablet": "product-zx7-speaker/tablet/image-product.jpg",
       "desktop": "product-zx7-speaker/desktop/image-product.jpg"
     },
-    "cartImage": "/images/cart/image-zx7-speaker.jpg",
+    "cartImage": "cart/image-zx7-speaker.jpg",
     "category": "speakers",
     "categoryImage": {
       "mobile": "category-speakers/mobile/image-zx7.jpg",
@@ -102,7 +102,7 @@
       "tablet": "product-zx9-speaker/tablet/image-product.jpg",
       "desktop": "product-zx9-speaker/desktop/image-product.jpg"
     },
-    "cartImage": "/images/cart/image-zx9-speaker.jpg",
+    "cartImage": "cart/image-zx9-speaker.jpg",
     "category": "speakers",
     "categoryImage": {
       "mobile": "category-speakers/mobile/image-zx9.jpg",
