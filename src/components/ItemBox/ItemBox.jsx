@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./itembox.scss";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
@@ -14,6 +14,8 @@ export const ItemBox = ({
   slug,
   type,
 }) => {
+  const [modal, setModal] = useState();
+  console.log(type.name);
   return (
     <div
       className={odd ? "item odd" : "item" && details ? "item details" : "item"}
@@ -46,12 +48,13 @@ export const ItemBox = ({
         {details ? <div className="item__price">$ {price}</div> : null}
         {details ? (
           <Button
-            onClick={() =>
+            onClick={() => {
               localStorage.setItem(
                 type.id,
                 JSON.stringify({ ...type, quantity: 1 })
-              )
-            }
+              );
+              alert(`Item ${type.name} was added to cart`);
+            }}
             color={"orange"}
           >
             add to cart

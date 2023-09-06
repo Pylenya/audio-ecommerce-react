@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./cartlist.scss";
 import CartItem from "./CartItem";
+import Button from "../Button/Button";
 export const CartList = () => {
   let temp = Object.values(localStorage);
   let tempArr = [];
@@ -52,6 +53,7 @@ export const CartList = () => {
         {itemArray.length > 0 ? (
           <div className="totalprice">
             TOTAL PRICE: $ {totalItemsPrice.reduce((acc, item) => acc + item)}
+            <Button color={"orange"}>checkout</Button>
           </div>
         ) : (
           <div className="empty-cart">
